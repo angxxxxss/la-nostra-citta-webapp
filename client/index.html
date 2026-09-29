@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="La Nostra Città, Il Nostro Futuro: segnalazioni e priorità urbane per Milano.">
+    <title>La Nostra Città, Il Nostro Futuro</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <header class="site-header"><a class="brand" href="#home">Insieme per Milano</a><nav aria-label="Navigazione principale"><a href="#segnala">Segnala</a><a href="#priorita">Priorità</a><a href="#come-funziona">Come funziona</a></nav></header>
+    <main id="home">
+      <section class="hero" aria-labelledby="titolo-principale"><p class="eyebrow">La Nostra Città, Il Nostro Futuro</p><h1 id="titolo-principale">Milano migliora quando la voce dei cittadini conta.</h1><p>Raccogliamo segnalazioni, proposte e priorità urbane per costruire insieme quartieri più curati, accessibili e sicuri.</p><a class="button" href="#segnala">Invia una segnalazione</a></section>
+      <section id="come-funziona" class="section"><h2>Come funziona</h2><ol class="steps"><li><strong>Racconta</strong><span>Descrivi ciò che serve al tuo quartiere.</span></li><li><strong>Documenta</strong><span>Allega una foto o un documento utile.</span></li><li><strong>Sostieni</strong><span>Aiuta le priorità condivise a emergere.</span></li></ol></section>
+      <section id="segnala" class="section form-section"><h2>Invia una segnalazione</h2><p>Il modulo sarà collegato all’API dopo la verifica dello schema MySQL esistente.</p><form id="report-form"><label for="titolo">Titolo<input id="titolo" name="titolo" required maxlength="140"></label><label for="descrizione">Descrizione<textarea id="descrizione" name="descrizione" required maxlength="3000"></textarea></label><label for="allegato">Allegato<input id="allegato" name="allegato" type="file" accept="image/jpeg,image/png,application/pdf" required></label><button class="button" type="submit">Salva bozza</button><p id="form-message" role="status" aria-live="polite"></p></form></section>
+      <section id="priorita" class="section"><h2>Priorità cittadine</h2><p>Le segnalazioni pubblicate, i filtri per quartiere e la classifica dei sostegni saranno disponibili dopo l’integrazione del modello dati Aiven.</p></section>
+    </main>
+    <footer>Comitato cittadino Insieme per Milano</footer><script type="module" src="/app.js"></script>
+  </body>
+</html>
