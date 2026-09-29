@@ -1,0 +1,27 @@
+{
+  "name": "la-nostra-citta-webapp",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Webapp per segnalazioni e priorità urbane del comitato Insieme per Milano.",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch server/src/index.js",
+    "start": "node server/src/index.js",
+    "test": "node --test server/tests/**/*.test.js"
+  },
+  "dependencies": {
+    "argon2": "^0.44.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.1.0",
+    "express-session": "^1.18.2",
+    "helmet": "^8.1.0",
+    "multer": "^2.0.2",
+    "mysql2": "^3.14.4",
+    "zod": "^4.1.12"
+  },
+  "devDependencies": {
+    "supertest": "^7.1.4"
+  }
+}
